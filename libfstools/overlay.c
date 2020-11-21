@@ -361,6 +361,8 @@ static int overlay_mount_fs(struct volume *v, const char *overlay_mp)
 #endif
 #ifdef OVL_MOUNT_COMPRESS_ZLIB
 		"compr=zlib"
+#elif OVL_MOUNT_COMPRESS_ZSTD
+		"compr=zstd"
 #else
 		NULL
 #endif
